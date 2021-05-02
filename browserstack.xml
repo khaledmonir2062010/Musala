@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RegressionSuite" parallel="tests" thread-count="2">
+
+	<test name="chrome Regression test">
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="browser_version" value="72.0" />
+		<parameter name="os" value="windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="resolution" value="1920x1080" />
+
+
+		<classes>
+			<class name="tests.UserRegistrationTest_browserstack" />
+		</classes>
+	</test>
+
+
+
+	<test name="fire fox Regression test">
+
+		<parameter name="browser" value="firefox" />
+		<parameter name="browser_version" value="65.0" />
+		<parameter name="os" value="windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="resolution" value="1920x1080" />
+		<classes>
+			<class name="tests.UserRegistrationTest_browserstack" />
+		</classes>
+	</test>
+
+
+	<test name="Internet Explorler Regression test">
+
+		<parameter name="browser" value="IE" />
+		<parameter name="browser_version" value="11.0" />
+		<parameter name="os" value="widnows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="resolution" value="1920x1080" />
+		<classes>
+			<class name="tests.UserRegistrationTest_browserstack" />
+		</classes>
+	</test>
+</suite>

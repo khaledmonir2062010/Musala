@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite parallel="false" name="Suite">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="regression"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.Registeration_test" />
+			<class name="tests.chromedriver" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
