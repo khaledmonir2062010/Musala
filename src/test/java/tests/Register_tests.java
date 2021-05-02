@@ -105,8 +105,10 @@ public class Register_tests extends TestBase{
 			}else if(Reg_page.checkAlphabet(Mobilenum)){
 
 				Test="Mobile Number Field should accept numeric only.";
-				System.out.println("failednum");
 
+			}else if(firstname==lastName) {
+				
+				Test="Firstname and lastname should not be the same.";
 			}
 			RegObj.ClickSignup();
 			driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
