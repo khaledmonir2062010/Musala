@@ -30,7 +30,7 @@ public class TEST_CASE_3_4 extends TestBase {
 	
 	String Title="https://www.musala.com/careers/join-us/"; 
 
-	@Test
+	@Test(priority = 1)
 	public void TC3() throws CsvValidationException, IOException, InterruptedException
 	{
 
@@ -81,7 +81,7 @@ public class TEST_CASE_3_4 extends TestBase {
 	}
 
 
-	@Test
+	@Test(priority = 2)
 	public void TC4()
 	{
 		HomePag    = new Musala_Home_page(driver);
