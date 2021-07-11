@@ -10,8 +10,9 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="tests.Registeration_test" />
-			<class name="tests.chromedriver" />
+			<class name="tests.TEST_CASE_1" />
+			<class name="tests.TEST_CASE_2" />
+			<class name="tests.TEST_CASE_3_4" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
