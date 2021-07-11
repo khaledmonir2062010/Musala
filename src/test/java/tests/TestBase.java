@@ -16,8 +16,8 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 	
 	
-	String ChromePath=System.getProperty("user.dir")+"/Drivers/chromedriver";
-	String FirefoxPath=System.getProperty("user.dir")+"/Drivers/geckodriver";
+	String ChromePath=System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe";
+	String FirefoxPath=System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe";
 	String os=System.getProperty("os.name").toLowerCase();
 	
 	public static WebDriver driver;
@@ -39,7 +39,7 @@ public class TestBase {
         }
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        String dashboardURL = "https://www.phptravels.net/register/en";
+        String dashboardURL = "https://www.musala.com/";
 		driver.navigate().to(dashboardURL);
 		driver.manage().window().maximize();
 	}

@@ -9,17 +9,18 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class PageBase {
-	
-	protected WebDriver drvier ; 
+
+	protected WebDriver driver ; 
 	public JavascriptExecutor jse ; 
 	public Select select ; 
 	public Actions action ; 
-	
-	
+
+
 	public PageBase(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
 	}
+	
 	
 	protected static void click_button(WebElement button)
 	{
@@ -30,26 +31,27 @@ public class PageBase {
 
 	public String getAttribute(WebElement element) { return element.getAttribute("value"); }
 
+	
+	//Method for set text
 	protected static void SetText(WebElement textElement, String value)
 	{
 		textElement.sendKeys(value);
 	}
-	
-	protected static void Clear(WebElement textElement)
-	{
-		textElement.clear();
-	}
 
-	public void scrollToBottom() 
-
-	{
-		jse.executeScript("scrollBy(0,2500)"); 
-	}
+	//Method for clear Text
 	public void clearText(WebElement element) 
 	{
 		element.clear();
 	}
 
 	
+	//Method for scrolling down
+	public void scrollToBottom() 
+
+	{
+		jse.executeScript("scrollBy(0,2500)"); 
+	}
+
+
 
 }
